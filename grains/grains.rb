@@ -4,9 +4,7 @@ class Grains
     grains = 0
     if num == 1
       grains = 1
-    elsif num == 2
-      grains = 2
-    elsif num <= 64 && num > 2
+    elsif num <= 64 && num > 1
       grains += 2 ** (num - 1)
     else
       raise ArgumentError
