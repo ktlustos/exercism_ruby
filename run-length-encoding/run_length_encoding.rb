@@ -53,5 +53,9 @@ for i in input do
     if i.match(/\d/) && !input[i - 1].match(/\d/)
       intermediate.push i
     elsif i.match(/d/) && input[i - 1].match(/\d/)
-      intermediate[i-1] << i
+      intermediate.last << i
+    elsif !i.match(/d/)
+      intermediate.push i
+    end
+  end
 end
