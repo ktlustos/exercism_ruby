@@ -1,6 +1,6 @@
 class Array
 
-  def accumulate(&block)
+  def accumulate
     result = []
     self.each do |i|
       result << yield(i)
